@@ -96,7 +96,7 @@ while True:
     # Read text form cropped image
     imgRead = cv2.cvtColor(imgCropped, cv2.COLOR_BGR2RGB)  # tesseract works with RGB
     string = pytesseract.image_to_string(imgRead)  # Read and put text in a string
-    with open('readme.txt', 'w') as f:  # Create/ open 'readme.txt'
+    with open('Data.txt', 'w') as f:  # Create/ open 'Data.txt'
         f.write(string)  # Wirte string in txt
         f.write('\n')
 
